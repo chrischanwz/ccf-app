@@ -34,7 +34,7 @@ export function optionIsInDropdownOptions(
 ): boolean {
   let isWithinComparingDropdownOption = false
   comparingDropdownOptions.forEach((comparingDropdownOption) => {
-    if (comparingDropdownOption.key === dropdownOption.key) {
+    if (comparingDropdownOption.key === dropdownOption?.key) {
       isWithinComparingDropdownOption = true
     }
   })
