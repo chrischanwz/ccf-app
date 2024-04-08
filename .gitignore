@@ -270,6 +270,7 @@ sketch
 
 #terraform
 terraform/.terraform/
+terraform/aws/.terraform/
 
 #TestCafe
 screenshots

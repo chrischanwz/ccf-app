@@ -13,7 +13,7 @@ on:
       - 'microsite/**'
       - '.github/workflows/deploy-microsite.yml'
 
-concurrency: 
+concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
@@ -21,7 +21,7 @@ jobs:
   lint-test:
     runs-on: ubuntu-latest
     # Runs tests across node 18 and node 20 environments
-    strategy: 
+    strategy:
       fail-fast: false
       matrix:
         node-version: [18.x, 20.x]
@@ -69,14 +69,14 @@ jobs:
           bash <(curl -s https://codecov.io/bash) -f packages/aws/coverage/* -F aws
           bash <(curl -s https://codecov.io/bash) -f packages/gcp/coverage/* -F gcp
           bash <(curl -s https://codecov.io/bash) -f packages/azure/coverage/* -F azure
-#      - name: integration tests
-#        run: yarn test:integration
-#        continue-on-error: true # Temporarily allow continue on failure till we've seen the tests consistently pass on CI
+  #      - name: integration tests
+  #        run: yarn test:integration
+  #        continue-on-error: true # Temporarily allow continue on failure till we've seen the tests consistently pass on CI
   build:
     needs: lint-test
     runs-on: ubuntu-latest
     # Runs tests across node 18 and node 20 environments
-    strategy: 
+    strategy:
       fail-fast: false
       matrix:
         node-version: [18.x, 20.x]

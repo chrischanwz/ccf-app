@@ -1,9 +1,9 @@
-resource "aws_s3_bucket" "ccf_terraform_state" {
-  bucket = var.terraform_state_bucket
-}
+# resource "aws_s3_bucket" "ccf_terraform_state" {
+#  bucket = var.terraform_state_bucket
+# }
 
 resource "aws_s3_bucket_versioning" "ccf_terraform_state_versioning" {
-  bucket = aws_s3_bucket.ccf_terraform_state.id
+  bucket = var.terraform_state_bucket
 
   versioning_configuration {
     status = "Enabled"
@@ -11,7 +11,7 @@ resource "aws_s3_bucket_versioning" "ccf_terraform_state_versioning" {
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "ccf_terraform_state_encryption" {
-  bucket = aws_s3_bucket.ccf_terraform_state.id
+  bucket = var.terraform_state_bucket
 
   rule {
     apply_server_side_encryption_by_default {
@@ -29,20 +29,15 @@ resource "aws_security_group" "ccf_instance_sg" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    cidr_blocks = var.allowed_cidr_blocks
-    security_groups = [
-      "${var.vpn_security_group_id}"
-    ]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = var.allowed_cidr_blocks
-    security_groups = [
-      "${var.vpn_security_group_id}"
-    ]
+    cidr_blocks = ["0.0.0.0/0"]
+
   }
 
   egress {

@@ -1,4 +1,4 @@
 provider "aws" {
-  profile = "YOUR-AWS-DEFAULT-PROFILE"
+  profile = "default"
   region  = var.default_region
 }
