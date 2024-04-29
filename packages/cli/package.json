@@ -83,7 +83,7 @@
     "dotenv": "^16.0.0",
     "fs-extra": "^10.0.0",
     "moment": "^2.29.1",
-    "ramda": "^0.29.0",
+    "ramda": "^0.30.0",
     "typed-prompts": "^1.5.0"
   },
   "lint-staged": {
