@@ -2387,7 +2387,7 @@ __metadata:
     moment: ^2.29.1
     onchange: ^7.1.0
     prettier: ^2.5.1
-    ramda: ^0.29.0
+    ramda: ^0.30.1
     rimraf: ^3.0.2
     source-map-support: ^0.5.19
     ts-jest: ^27.1.2
@@ -2464,7 +2464,7 @@ __metadata:
     moment: ^2.29.1
     mongodb: ^4.7.0
     prettier: ^2.5.1
-    ramda: ^0.29.0
+    ramda: ^0.30.1
     rimraf: ^3.0.2
     ts-jest: ^27.1.2
     ts-node: ^10.4.0
@@ -2499,7 +2499,7 @@ __metadata:
     moment: ^2.29.1
     onchange: ^7.1.0
     prettier: ^2.5.1
-    ramda: ^0.29.0
+    ramda: ^0.30.1
     rimraf: ^3.0.2
     source-map-support: ^0.5.19
     ts-jest: ^27.1.2
@@ -2582,7 +2582,7 @@ __metadata:
     moment: ^2.29.1
     onchange: ^7.1.0
     prettier: ^2.5.1
-    ramda: ^0.29.0
+    ramda: ^0.30.1
     rimraf: ^3.0.2
     source-map-support: ^0.5.19
     ts-jest: ^27.1.2
@@ -2640,7 +2640,7 @@ __metadata:
     mockdate: ^3.0.5
     moment: ^2.29.1
     prettier: ^2.5.1
-    ramda: ^0.29.0
+    ramda: ^0.30.1
     react: ^18.2.0
     react-apexcharts: ^1.3.9
     react-dates: ^21.8.0
@@ -2707,7 +2707,7 @@ __metadata:
     moment: ^2.29.1
     onchange: ^7.1.0
     prettier: ^2.5.1
-    ramda: ^0.29.0
+    ramda: ^0.30.1
     rimraf: ^3.0.2
     source-map-support: ^0.5.19
     ts-jest: ^27.1.2
@@ -19585,10 +19585,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ramda@npm:^0.29.0":
-  version: 0.29.0
-  resolution: "ramda@npm:0.29.0"
-  checksum: 9ab26c06eb7545cbb7eebcf75526d6ee2fcaae19e338f165b2bf32772121e7b28192d6664d1ba222ff76188ba26ab307342d66e805dbb02c860560adc4d5dd57
+"ramda@npm:^0.30.1":
+  version: 0.30.1
+  resolution: "ramda@npm:0.30.1"
+  checksum: ce6f4b6b967a84a4e65c01ab1b1cdd73d46b8efe71aeccf5d1443c56c4e31a0ea82ece7df6510453dd3d83b92cabf8a6b4d50d189a1b35c08a6f44b281bebf79
   languageName: node
   linkType: hard
 
